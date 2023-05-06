@@ -21227,7 +21227,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As the best k-value is 48 == "all", there is no necessity to perform the CatBoost algorithm with attribute selection at first glance, but we will perform it with k = 30 as it is one of the best values and reduces the number of variables by 37.5 % so it will offer a good balance between computational cost and performance (which is the main reason why we perform attribute selection). Unlike the other attribute performance plots, we will need to fixate it by hand as otherwise, it will choose the best k-value of 48, which does not make sense.</p>
+<p>As the best k-value is 48 (which are all the attributes after preprocessing), there is no necessity to perform the CatBoost algorithm with attribute selection at first glance, but we will perform it with k = 30 as it is one of the best values and reduces the number of variables by 37.5 % so it will offer a good balance between computational cost and performance (which is the main reason why we perform attribute selection). Unlike the other attribute performance plots, we will need to fixate it by hand as otherwise, it will choose the best k-value of 48, which does not make sense.</p>
 <p>Also, is important to notice that this plot only serves us as a stimation of which single value performs better in the model, but as we will see in the next section, the interrelation of parameters changes the final result, if not, the graphs for feature selection and no feature selection would have the same shape.</p>
 
 </div>
@@ -22545,7 +22545,7 @@ class="
 <p>After carefully evaluating the results obtained from the predictions in the train-evaluation process (as shown in the graphs above) and considering various factors, we have concluded that the CatBoost model with selected parameters and without attribute selection is the best model for our dataset. This is because it achieves the highest scores on balanced accuracy, F1 score, and in the confusion matrix.</p>
 <p>It is worth exploring alternative models with lower accuracy but faster training times, such as the parameter-free CatBoost model. This approach can be particularly beneficial in situations where computational resources are limited. However, considering the company's available resources (based on the number of employees), we believe it is possible to use a more time-consuming model that is properly trained and tuned for optimal performance.</p>
 <p>Another reason is that retraining this model for this purpose in concrete is not a problem, as the company only needs to perform this process once a year or monthly at much. Thus, less than 20 minutes of training time should not be a problem. 
-<br>However, if the company were to perform this process more frequently, it would be advisable to use a model with a shorter training time, such as the parameter-free CatBoost model. Although if a company has a high turnover rate of employees, it's possible that they may have the necessary computational resources to use the model with the best accuracy possible.</p>
+<br>However, if the company were to perform this process more frequently, it would be advisable to use a model with a shorter training time, such as the parameter-free CatBoost model. Although if a company has a high turnover rate of employees, it is possible that they may have the necessary computational resources to use the model with the best accuracy possible.</p>
 <p>Moreover, since the company aims to identify employees who may leave, having a highly accurate model is crucial to avoid missing potential cases. Therefore, investing in the model with the best accuracy possible, even if it requires more computational resources and training time, may be the best decision. In summary, the higher accuracy of the selected CatBoost model with selected features may outweigh any potential drawbacks, being the most suitable model for the company's needs.</p>
 
 </div>
@@ -23417,7 +23417,7 @@ The models has been saved and loaded correctly
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Throughout this project, we have gained a deeper understanding of the model selection process using Catboost, gradient boost, and logistic regression models with sklearn. Our data preprocessing was more extensive than in previous project, involving the encoding of categorical variables and dropping insignificant attributes. The exploratory data analysis (EDA) phase played a crucial role in helping us manage and understand our data better, serving as a foundation for our decisions throughout the project.</p>
-<p>With the use of several pipelines pipelines (and a column transformer), we managed to create and train all of our models (Catboost, gradient boost, and logistic regression), paying particular attention to hyperparameters. This helped us gain a better understanding of the different hyperparameters affect each of the model's results. We then evaluated the models' different results, gaining insights into their respective strengths and weaknesses in terms of scoring and time.</p>
+<p>Using multiple pipelines (and a column transformer), we were able to create and train all of our models (including CatBoost, Gradient Boost, and Logistic Regression), with special attention paid to hyperparameters. This approach allowed us to gain a better understanding of how various hyperparameters (and the selection of attributes) impact the performance of each model. By evaluating the results of each model, we gained valuable insights into their respective strengths and weaknesses in terms of scoring and training time.</p>
 <p>In conclusion, during this second project, we gained a deeper understanding of classification problems and the use of the proposed models, as well as a better understanding of pipelines and column transformers for data preprocessing and model training. We also gained a deeper understanding of the use of hyperparameters and how they affect the model's performance.</p>
 
 </div>
@@ -23440,7 +23440,7 @@ The models has been saved and loaded correctly
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[144]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[145]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -23493,7 +23493,7 @@ The models has been saved and loaded correctly
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>[NbConvertApp] Writing 3853756 bytes to ../data/html/model.html
+<pre>[NbConvertApp] Writing 3853881 bytes to ../data/html/model.html
 </pre>
 </div>
 </div>
