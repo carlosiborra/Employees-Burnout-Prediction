@@ -15047,7 +15047,7 @@ Also using this to upload cleaner commits to GitHub.</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Export the data to a csv file</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Export the data to a csv file to save it</span>
 <span class="n">datos</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;../data/attrition_available_2.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
@@ -17102,7 +17102,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3.3.-Outliers">3.3. Outliers<a class="anchor-link" href="#3.3.-Outliers">&#182;</a></h2>
+<h2 id="3.5.-Outliers">3.5. Outliers<a class="anchor-link" href="#3.5.-Outliers">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17125,7 +17125,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Note:</strong> outliers are only useful when the attributes are not categorical, as they are not useful for classification problems. Therefore, only the numerical attributes (<code>X_train_num</code>) will be considered in this section .</p>
+<p><strong>Note:</strong> outliers are only useful when the attributes are not categorical, as they are not useful for classification problems. Therefore, only the numerical attributes (<code>X_train_num</code>) will be considered in this section.</p>
 
 </div>
 </div>
@@ -17137,7 +17137,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.3.1.-Outliers-visualization">3.3.1. Outliers visualization<a class="anchor-link" href="#3.3.1.-Outliers-visualization">&#182;</a></h3>
+<h3 id="3.5.1.-Outliers-visualization">3.5.1. Outliers visualization<a class="anchor-link" href="#3.5.1.-Outliers-visualization">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -17148,7 +17148,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="3.3.1.1.-Boxplot">3.3.1.1. Boxplot<a class="anchor-link" href="#3.3.1.1.-Boxplot">&#182;</a></h4>
+<h4 id="3.5.1.1.-Boxplot">3.5.1.1. Boxplot<a class="anchor-link" href="#3.5.1.1.-Boxplot">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -17206,7 +17206,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="3.3.1.2.-Histogram">3.3.1.2. Histogram<a class="anchor-link" href="#3.3.1.2.-Histogram">&#182;</a></h4>
+<h4 id="3.5.1.2.-Histogram">3.5.1.2. Histogram<a class="anchor-link" href="#3.5.1.2.-Histogram">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -17277,7 +17277,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="3.3.1.3.-Skewness-and-kurtosis">3.3.1.3. Skewness and kurtosis<a class="anchor-link" href="#3.3.1.3.-Skewness-and-kurtosis">&#182;</a></h4><p>Skewness and kurtosis are commonly used to measure the shape of a distribution. Skewness measures the degree of asymmetry in the distribution, while kurtosis measures the degree of flatness in the distribution compared to a normal distribution.<br>
+<h4 id="3.5.1.3.-Skewness-and-kurtosis">3.5.1.3. Skewness and kurtosis<a class="anchor-link" href="#3.5.1.3.-Skewness-and-kurtosis">&#182;</a></h4><p>Skewness and kurtosis are commonly used to measure the shape of a distribution. Skewness measures the degree of asymmetry in the distribution, while kurtosis measures the degree of flatness in the distribution compared to a normal distribution.<br>
 We will look for observations that are far from the central tendency of the distribution and may indicate the presence of extreme values or data points that do not fit the pattern of the majority of the data (which as expected, happens to be the case in this dataset).</p>
 
 </div>
@@ -17598,7 +17598,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.3.2.-Importance-of-outliers-on-our-models">3.3.2. Importance of outliers on our models<a class="anchor-link" href="#3.3.2.-Importance-of-outliers-on-our-models">&#182;</a></h3><ul>
+<h3 id="3.5.2.-Importance-of-outliers-on-our-models">3.5.2. Importance of outliers on our models<a class="anchor-link" href="#3.5.2.-Importance-of-outliers-on-our-models">&#182;</a></h3><ul>
 <li><p><strong>Logistic regression</strong> aims to fit a linear boundary that separates the two classes in the dataset. When outliers are present, they can shift this boundary and lead to incorrect predictions. Additionally, outliers can affect the estimation of the regression coefficients and standard errors, leading to biased parameter estimates and incorrect hypothesis tests.</p>
 </li>
 <li><p><strong>Boosting</strong> algorithms are sensitive to outliers in the training data, as they aim to fit the data as closely as possible. Outliers can have a significant impact on the model's performance and can lead to overfitting.<br>
@@ -17616,7 +17616,7 @@ In boosting, each subsequent model in the sequence aims to correct the errors ma
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="3.4.-Correlation">3.4. Correlation<a class="anchor-link" href="#3.4.-Correlation">&#182;</a></h2>
+<h2 id="3.6.-Correlation">3.6. Correlation<a class="anchor-link" href="#3.6.-Correlation">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -17773,7 +17773,7 @@ Name: Attrition, dtype: float64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.4.0.-Obtaining-the-correlation-matrix-formatted-into-our-own-data-structure">3.4.0. Obtaining the correlation matrix formatted into our own data structure<a class="anchor-link" href="#3.4.0.-Obtaining-the-correlation-matrix-formatted-into-our-own-data-structure">&#182;</a></h3><p>This is done for the sake of simplicity and to be able to visualize the correlation matrix in a more intuitive way.</p>
+<h3 id="3.6.0.-Obtaining-the-correlation-matrix-formatted-into-our-own-data-structure">3.6.0. Obtaining the correlation matrix formatted into our own data structure<a class="anchor-link" href="#3.6.0.-Obtaining-the-correlation-matrix-formatted-into-our-own-data-structure">&#182;</a></h3><p>This is done for the sake of simplicity and to be able to visualize the correlation matrix in a more intuitive way.</p>
 
 </div>
 </div>
@@ -17873,7 +17873,7 @@ YearsWithCurrManager	[5.656244979919444, nan, 3.0, 4.0, 4.0, 3.0, nan, 34.0, 5.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="3.4.1.-Correlation-visualization">3.4.1. Correlation visualization<a class="anchor-link" href="#3.4.1.-Correlation-visualization">&#182;</a></h3>
+<h3 id="3.6.1.-Correlation-visualization">3.6.1. Correlation visualization<a class="anchor-link" href="#3.6.1.-Correlation-visualization">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -17884,7 +17884,7 @@ YearsWithCurrManager	[5.656244979919444, nan, 3.0, 4.0, 4.0, 3.0, nan, 34.0, 5.0
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="3.4.1.1.-Correlation-heatmap">3.4.1.1. Correlation heatmap<a class="anchor-link" href="#3.4.1.1.-Correlation-heatmap">&#182;</a></h4>
+<h4 id="3.6.1.1.-Correlation-heatmap">3.6.1.1. Correlation heatmap<a class="anchor-link" href="#3.6.1.1.-Correlation-heatmap">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -19332,7 +19332,7 @@ On the other hand, the disadvantage is that it is computationally expensive, but
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="5.1.-Logistic-Regression">5.1. Logistic Regression<a class="anchor-link" href="#5.1.-Logistic-Regression">&#182;</a></h2><p>Logistic regression with no hyperparameter tuning. It will be used as a baseline for the rest of the models.</p>
+<h2 id="5.2.-Logistic-Regression">5.2. Logistic Regression<a class="anchor-link" href="#5.2.-Logistic-Regression">&#182;</a></h2><p>Logistic regression with no hyperparameter tuning. It will be used as a baseline for the rest of the models.</p>
 
 </div>
 </div>
@@ -19391,7 +19391,7 @@ On the other hand, the disadvantage is that it is computationally expensive, but
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5.1.1.-Logistic-Regression---Predefined-parameters">5.1.1. Logistic Regression - Predefined parameters<a class="anchor-link" href="#5.1.1.-Logistic-Regression---Predefined-parameters">&#182;</a></h3>
+<h3 id="5.2.1.-Logistic-Regression---Predefined-parameters">5.2.1. Logistic Regression - Predefined parameters<a class="anchor-link" href="#5.2.1.-Logistic-Regression---Predefined-parameters">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -19402,7 +19402,7 @@ On the other hand, the disadvantage is that it is computationally expensive, but
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.1.1.1.-Logistic-Regression---Predefined-parameters---No-attribute-selection">5.1.1.1. Logistic Regression - Predefined parameters - No attribute selection<a class="anchor-link" href="#5.1.1.1.-Logistic-Regression---Predefined-parameters---No-attribute-selection">&#182;</a></h4>
+<h4 id="5.2.1.1.-Logistic-Regression---Predefined-parameters---No-attribute-selection">5.2.1.1. Logistic Regression - Predefined parameters - No attribute selection<a class="anchor-link" href="#5.2.1.1.-Logistic-Regression---Predefined-parameters---No-attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -19547,7 +19547,7 @@ NO variable SELECTION in the pipline (selected all).
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.1.1.2.-Logistic-Regression---Predefined-parameters---Attribute-selection">5.1.1.2. Logistic Regression - Predefined parameters - Attribute selection<a class="anchor-link" href="#5.1.1.2.-Logistic-Regression---Predefined-parameters---Attribute-selection">&#182;</a></h4>
+<h4 id="5.2.1.2.-Logistic-Regression---Predefined-parameters---Attribute-selection">5.2.1.2. Logistic Regression - Predefined parameters - Attribute selection<a class="anchor-link" href="#5.2.1.2.-Logistic-Regression---Predefined-parameters---Attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -19800,7 +19800,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=30, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="5.2.-Boosting">5.2. Boosting<a class="anchor-link" href="#5.2.-Boosting">&#182;</a></h2>
+<h2 id="5.3.-Boosting">5.3. Boosting<a class="anchor-link" href="#5.3.-Boosting">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -19856,7 +19856,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=30, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5.2.1.-Boosting---Predefined-parameters">5.2.1. Boosting - Predefined parameters<a class="anchor-link" href="#5.2.1.-Boosting---Predefined-parameters">&#182;</a></h3>
+<h3 id="5.3.1.-Boosting---Predefined-parameters">5.3.1. Boosting - Predefined parameters<a class="anchor-link" href="#5.3.1.-Boosting---Predefined-parameters">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -19867,7 +19867,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=30, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.2.1.1.-Boosting---Predefined-parameters---No-attribute-selection">5.2.1.1. Boosting - Predefined parameters - No attribute selection<a class="anchor-link" href="#5.2.1.1.-Boosting---Predefined-parameters---No-attribute-selection">&#182;</a></h4>
+<h4 id="5.3.1.1.-Boosting---Predefined-parameters---No-attribute-selection">5.3.1.1. Boosting - Predefined parameters - No attribute selection<a class="anchor-link" href="#5.3.1.1.-Boosting---Predefined-parameters---No-attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -20011,7 +20011,7 @@ NO variable SELECTION in the pipline (selected all).
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.2.1.2.-Boosting---Predefined-parameters---Attribute-selection">5.2.1.2. Boosting - Predefined parameters - Attribute selection<a class="anchor-link" href="#5.2.1.2.-Boosting---Predefined-parameters---Attribute-selection">&#182;</a></h4>
+<h4 id="5.3.1.2.-Boosting---Predefined-parameters---Attribute-selection">5.3.1.2. Boosting - Predefined parameters - Attribute selection<a class="anchor-link" href="#5.3.1.2.-Boosting---Predefined-parameters---Attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -20247,7 +20247,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=20, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5.2.2.-Boosting---Selected-parameters">5.2.2. Boosting - Selected parameters<a class="anchor-link" href="#5.2.2.-Boosting---Selected-parameters">&#182;</a></h3>
+<h3 id="5.3.2.-Boosting---Selected-parameters">5.3.2. Boosting - Selected parameters<a class="anchor-link" href="#5.3.2.-Boosting---Selected-parameters">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -20312,7 +20312,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=20, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.2.2.1.-Parameter-analysis">5.2.2.1. Parameter analysis<a class="anchor-link" href="#5.2.2.1.-Parameter-analysis">&#182;</a></h4>
+<h4 id="5.3.2.1.-Parameter-analysis">5.3.2.1. Parameter analysis<a class="anchor-link" href="#5.3.2.1.-Parameter-analysis">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -20609,7 +20609,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.2.2.1.-Boosting---Selected-parameters---No-attribute-selection">5.2.2.1. Boosting - Selected parameters - No attribute selection<a class="anchor-link" href="#5.2.2.1.-Boosting---Selected-parameters---No-attribute-selection">&#182;</a></h4>
+<h4 id="5.3.2.1.-Boosting---Selected-parameters---No-attribute-selection">5.3.2.1. Boosting - Selected parameters - No attribute selection<a class="anchor-link" href="#5.3.2.1.-Boosting---Selected-parameters---No-attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -20758,7 +20758,7 @@ NO variable SELECTION in the pipline (selected all).
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.2.2.2.-Boosting---Selected-parameters---Attribute-selection">5.2.2.2. Boosting - Selected parameters - Attribute selection<a class="anchor-link" href="#5.2.2.2.-Boosting---Selected-parameters---Attribute-selection">&#182;</a></h4>
+<h4 id="5.3.2.2.-Boosting---Selected-parameters---Attribute-selection">5.3.2.2. Boosting - Selected parameters - Attribute selection<a class="anchor-link" href="#5.3.2.2.-Boosting---Selected-parameters---Attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -20911,7 +20911,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=20, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5.3.1.-CatBoost---Predefined-parameters">5.3.1. CatBoost - Predefined parameters<a class="anchor-link" href="#5.3.1.-CatBoost---Predefined-parameters">&#182;</a></h3>
+<h2 id="5.4.-CatBoost">5.4. CatBoost<a class="anchor-link" href="#5.4.-CatBoost">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -20922,7 +20922,18 @@ VARIABLES SELECTION in the pipline SelectKBest(k=20, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.3.1.0.-Model-selection-(external-libraries)">5.3.1.0. Model selection (external libraries)<a class="anchor-link" href="#5.3.1.0.-Model-selection-(external-libraries)">&#182;</a></h4><p>When it comes to selecting a machine learning model for a specific task, external libraries such as <code>LightGBM</code>, <code>XGBoost</code>, and <code>CatBoost</code> offer a wide range of options to choose from.</p>
+<h3 id="5.4.1.-CatBoost---Predefined-parameters">5.4.1. CatBoost - Predefined parameters<a class="anchor-link" href="#5.4.1.-CatBoost---Predefined-parameters">&#182;</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="5.4.1.0.-Model-selection-(external-libraries)">5.4.1.0. Model selection (external libraries)<a class="anchor-link" href="#5.4.1.0.-Model-selection-(external-libraries)">&#182;</a></h4><p>When it comes to selecting a machine learning model for a specific task, external libraries such as <code>LightGBM</code>, <code>XGBoost</code>, and <code>CatBoost</code> offer a wide range of options to choose from.</p>
 <ul>
 <li><p><code>LightGBM</code> is a great option for handling large datasets with many features efficiently. It uses a histogram-based algorithm, which speeds up the training process significantly. Additionally, it provides many hyperparameters that can be tuned to improve performance, including some that are specific to handling categorical features.</p>
 </li>
@@ -20992,7 +21003,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=20, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.3.1.1.-CatBoost---Predefined-parameters---No-attribute-selection">5.3.1.1. CatBoost - Predefined parameters - No attribute selection<a class="anchor-link" href="#5.3.1.1.-CatBoost---Predefined-parameters---No-attribute-selection">&#182;</a></h4>
+<h4 id="5.4.1.1.-CatBoost---Predefined-parameters---No-attribute-selection">5.4.1.1. CatBoost - Predefined parameters - No attribute selection<a class="anchor-link" href="#5.4.1.1.-CatBoost---Predefined-parameters---No-attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -21130,7 +21141,7 @@ NO variable SELECTION in the pipline (selected all).
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.3.1.2.-CatBoost---Predefined-parameters---Attribute-selection">5.3.1.2. CatBoost - Predefined parameters - Attribute selection<a class="anchor-link" href="#5.3.1.2.-CatBoost---Predefined-parameters---Attribute-selection">&#182;</a></h4>
+<h4 id="5.4.1.2.-CatBoost---Predefined-parameters---Attribute-selection">5.4.1.2. CatBoost - Predefined parameters - Attribute selection<a class="anchor-link" href="#5.4.1.2.-CatBoost---Predefined-parameters---Attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -21373,7 +21384,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=30, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="5.3.2.-CatBoost---Selected-parameters">5.3.2. CatBoost - Selected parameters<a class="anchor-link" href="#5.3.2.-CatBoost---Selected-parameters">&#182;</a></h3>
+<h3 id="5.4.2.-CatBoost---Selected-parameters">5.4.2. CatBoost - Selected parameters<a class="anchor-link" href="#5.4.2.-CatBoost---Selected-parameters">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -21609,7 +21620,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.3.2.1.-CatBoost---Selected-parameters---No-attribute-selection">5.3.2.1. CatBoost - Selected parameters - No attribute selection<a class="anchor-link" href="#5.3.2.1.-CatBoost---Selected-parameters---No-attribute-selection">&#182;</a></h4>
+<h4 id="5.4.2.1.-CatBoost---Selected-parameters---No-attribute-selection">5.4.2.1. CatBoost - Selected parameters - No attribute selection<a class="anchor-link" href="#5.4.2.1.-CatBoost---Selected-parameters---No-attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -21768,7 +21779,7 @@ NO variable SELECTION in the pipline (selected all).
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="5.3.2.2.-CatBoost---Selected-parameters---Attribute-selection">5.3.2.2. CatBoost - Selected parameters - Attribute selection<a class="anchor-link" href="#5.3.2.2.-CatBoost---Selected-parameters---Attribute-selection">&#182;</a></h4>
+<h4 id="5.4.2.2.-CatBoost---Selected-parameters---Attribute-selection">5.4.2.2. CatBoost - Selected parameters - Attribute selection<a class="anchor-link" href="#5.4.2.2.-CatBoost---Selected-parameters---Attribute-selection">&#182;</a></h4>
 </div>
 </div>
 </div>
@@ -21919,7 +21930,7 @@ VARIABLES SELECTION in the pipline SelectKBest(k=30, score_func=&lt;function mut
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="5.4.-Conclusions">5.4. Conclusions<a class="anchor-link" href="#5.4.-Conclusions">&#182;</a></h2>
+<h2 id="5.5.-Conclusions">5.5. Conclusions<a class="anchor-link" href="#5.5.-Conclusions">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -23440,7 +23451,7 @@ The models has been saved and loaded correctly
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -23493,7 +23504,7 @@ The models has been saved and loaded correctly
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>[NbConvertApp] Writing 3853881 bytes to ../data/html/model.html
+<pre>[NbConvertApp] Writing 3853989 bytes to ../data/html/model.html
 </pre>
 </div>
 </div>
